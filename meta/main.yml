@@ -1,0 +1,16 @@
+galaxy_info:
+  author: pastelInc
+  description: MeCab installation for Linux.
+  license: license (GPLv2, GPLv3, BSD, MIT)
+  min_ansible_version: 2.2
+
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+
+  galaxy_tags:
+    - NLP
+
+dependencies: []

@@ -1,0 +1,13 @@
+---
+- name: Enable groonga repo.
+  yum:
+    name: "{{ groonga_repo_url }}"
+    state: present
+  when: mecab_yum_repo_enabled
+
+- name: Ensure mecab is installed.
+  package:
+    name: "{{ item }}"
+    state: installed
+    enablerepo: "{{ mecab_enable_repo }}"
+  with_items: "{{ mecab_packages }}"

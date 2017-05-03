@@ -1,0 +1,5 @@
+---
+mecab_yum_repo_enabled: true
+mecab_packages:
+  - mecab
+  - mecab-ipadic
